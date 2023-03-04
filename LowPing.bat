@@ -1,4 +1,13 @@
 @echo off
+title Low Ping FPS Boost By : GlockBaby
+color 0a
+echo LOW PING GENERATOR By : GlockBaby https://discord.gg/QtRRhpZg
+echo Generate Low Ping and Higher FPS for better game play.
+pause
+cls
+echo Start Low Ping Generator?
+echo Proceed?...
+pause
 chcp 65001
 netsh int ip reset c:\restlog.txt
 netsh int ip reset d:\restlog.txt
@@ -52,7 +61,13 @@ cls
 ipconfig/release
 ipconfig/renew
 ipconfig/flushdns
+echo.
+echo Low Ping Generator Is Complete! ^<press any key to continue^>
+goto end
+
+:end
 cls
-echo 재부팅을 해주세요
+echo Thank you for using my products!! ENJOY!
+echo Join Discord for more https://discord.gg/QtRRhpZg
 timeout 2
 exit
