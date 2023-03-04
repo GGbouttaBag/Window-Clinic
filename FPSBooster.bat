@@ -1,4 +1,12 @@
 @echo off
+
+ECHO Welcome to FPS BOOSTER By : GlockBaby https://discord.gg/QtRRhpZg
+ECHO This Program Will Boost Your FPS For Any Game You Play. ENJOY!
+pause
+cls
+ECHO BOOST Starting...
+ECHO Proceed?..
+pause
 chcp 65001
 bcdedit >>nul
 if %errorlevel% == 1 goto :NoAdmin
@@ -72,6 +80,8 @@ schtasks /Change /TN "Microsoft\Windows\FileHistory\File History (maintenance mo
 schtasks /Change /TN "Microsoft\Windows\DiskFootprint\Diagnostics" /Disable
 schtasks /Change /TN "Microsoft\Windows\CloudExperienceHost\CreateObjectTask" /Disable
 schtasks /Change /TN "Microsoft\Windows\Windows Error Reporting\QueueReporting" /Disable
+ECHO.
+ECHO FPS has been boosted. ^<press any key^>
 goto end
 
 :end
