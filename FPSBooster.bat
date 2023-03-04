@@ -1,4 +1,14 @@
 @echo off
+title FPS Booster By : GlockBaby
+color 0a
+ECHO FPS BOOSTER By : GlockBaby https://discord.gg/QtRRhpZg
+ECHO Boost your FPS for any game.
+pause
+cls
+ECHO Boost Starting...
+ECHO Proceed?...
+pause
+
 chcp 65001
 bcdedit >>nul
 if %errorlevel% == 1 goto :NoAdmin
@@ -72,11 +82,13 @@ schtasks /Change /TN "Microsoft\Windows\FileHistory\File History (maintenance mo
 schtasks /Change /TN "Microsoft\Windows\DiskFootprint\Diagnostics" /Disable
 schtasks /Change /TN "Microsoft\Windows\CloudExperienceHost\CreateObjectTask" /Disable
 schtasks /Change /TN "Microsoft\Windows\Windows Error Reporting\QueueReporting" /Disable
+ECHO.
+ECHO FPS Has Been Boosted.. ^<press any key^>
 goto end
 
 :end
 cls
-echo 재부팅을 해주세요
+echo 
 timeout 2
 exit
 
