@@ -88,12 +88,12 @@ goto end
 
 :end
 cls
-echo 
+echo Thank you - GlockBaby
 timeout 2
 exit
 
 :NoAdmin
 cls
-echo 관리자 권한으로 실행해주세요
+echo Thank you - GlockBaby
 timeout 2
 exit
